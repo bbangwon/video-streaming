@@ -4,7 +4,7 @@ pipeline {
         PROJECT_ID = 'k-mooc-427802'
         CLUSTER_NAME = 'gke_kmooc'
         LOCATION = 'asia-northeast3-a'
-        CREDENTIALS_ID = 'c8364045-9f22-407a-9818-39f91d15b726'
+        CREDENTIALS_ID = 'gke'
     }
     stages {
         stage("Checkout code") {
