@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: video-streaming
-        image: pjbear/video-streaming
+        image: pjbear/video-streaming:latest
         ports:
         - containerPort: 80
         envFrom:
