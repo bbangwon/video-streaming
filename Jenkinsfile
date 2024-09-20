@@ -34,7 +34,7 @@ pipeline {
 				branch 'main'
 			}
             steps{
-                sh "sed -i 's/video-streaming:latest/video-streaming:${env.BUILD_ID}/g' video-streaming.yaml"
+                sh "sed -i 's/video-streaming:latest/video-streaming:${env.BUILD_ID}/g' video-streaming.yml"
                 step([$class: 'KubernetesEngineBuilder', projectId: env.PROJECT_ID, clusterName: env.CLUSTER_NAME, location: env.LOCATION, manifestPattern: 'video-streaming.yml', credentialsId: env.CREDENTIALS_ID, verifyDeployments: false])
             }
         }
