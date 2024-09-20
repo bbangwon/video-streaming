@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         PROJECT_ID = 'k-mooc-427802'
-        CLUSTER_NAME = 'gke_kmooc'
+        CLUSTER_NAME = 'gke_k-mooc-427802_asia-northeast3_k8s'
         LOCATION = 'asia-northeast3-a'
         CREDENTIALS_ID = 'gke'
     }
