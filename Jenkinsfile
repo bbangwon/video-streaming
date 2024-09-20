@@ -3,7 +3,7 @@ pipeline {
     environment {
         PROJECT_ID = 'k-mooc-427802'
         CLUSTER_NAME = 'k8s'
-        LOCATION = 'asia-northeast3-a'
+        LOCATION = 'asia-northeast3'
         CREDENTIALS_ID = 'gke'
     }
     stages {
