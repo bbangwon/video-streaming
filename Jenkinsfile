@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        PROJECT_ID = 'k-mooc-427802'
+        PROJECT_ID = 'inspired-arena-447810-n2'
         CLUSTER_NAME = 'k8s'
         LOCATION = 'asia-northeast3'
         CREDENTIALS_ID = 'gke'
@@ -15,7 +15,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("pjbear/video-streaming:${env.BUILD_ID}")
+                    myapp = docker.build("cyi38317/video-streaming:${env.BUILD_ID}")
                 }
             }
         }
